@@ -51,3 +51,6 @@ docs/_build/
 
 # virtual environment
 venv/
+
+app.db
+
