@@ -52,10 +52,5 @@ docs/_build/
 # virtual environment
 venv/
 
-<<<<<<< HEAD
-app.db
-
-=======
 # Database files
 *.db
->>>>>>> added databases files to be ignored
