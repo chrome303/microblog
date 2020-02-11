@@ -54,3 +54,6 @@ venv/
 
 # Database files
 *.db
+
+# IDE stuff
+.idea/
