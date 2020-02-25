@@ -58,10 +58,10 @@ class UserModelCase(unittest.TestCase):
 
         # create 4 posts
         now = datetime.utcnow()
-        p1 = Post(body="post from John", author_id=u1, timestamp=now + timedelta(seconds=1))
-        p2 = Post(body="post from Susan", author_id=u2, timestamp=now + timedelta(seconds=4))
-        p3 = Post(body="post from Mary", author_id=u3, timestamp=now + timedelta(seconds=3))
-        p4 = Post(body="post from David", author_id=u4, timestamp=now + timedelta(seconds=2))
+        p1 = Post(body="post from John", author=u1, timestamp=now + timedelta(seconds=1))
+        p2 = Post(body="post from Susan", author=u2, timestamp=now + timedelta(seconds=4))
+        p3 = Post(body="post from Mary", author=u3, timestamp=now + timedelta(seconds=3))
+        p4 = Post(body="post from David", author=u4, timestamp=now + timedelta(seconds=2))
         db.session.add_all([p1, p2, p3, p4])
         db.session.commit()
 
